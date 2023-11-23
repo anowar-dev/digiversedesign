@@ -32,18 +32,20 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#515764, #002F42);
+    background: linear-gradient(#d2d7e0, #517887);
     z-index: 999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .onLoadNone{
     display: none !important;
 }
 .onLoad_body .logo{
     max-width: 25rem;
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15%;
     animation: preload 2s infinite;
 }
 .onLoad_disable .logo{
@@ -215,9 +217,6 @@ img{
         height: 1.7rem !important;
         line-height: 1.7rem !important;
     }
-    .onLoad .onLoad_body .logo{
-        margin-top: 20%;
-    }
 }
 
 /*------- max-width: 992px  --------*/
@@ -225,7 +224,6 @@ img{
     /* PreLoder */
     .onLoad .onLoad_body .logo{
         width: 20rem;
-        margin-top: 25%;
     }
     .body_main .btns{
         margin-top: 20rem !important;
@@ -237,7 +235,6 @@ img{
     /* PreLoder */
     .onLoad .onLoad_body .logo{
         width: 18rem;
-        margin-top: 30%;
     }
 
     .body_main .btns{
@@ -252,8 +249,7 @@ img{
 @media (max-width: 576px) {
     /* PreLoder */
     .onLoad .onLoad_body .logo{
-        width: 15rem;
-        margin-top: 30%;
+        width: 16rem;
     }
     .onLoad_body .icon i{
         font-size: 1.3rem !important;
@@ -297,8 +293,7 @@ img{
 @media (max-width: 420px) {
     /* PreLoder */
     .onLoad .onLoad_body .logo{
-        width: 12rem;
-        margin-top: 35%;
+        width: 14rem;
     }
     .onLoad_body .icon i{
         font-size: 1rem !important;
@@ -342,8 +337,7 @@ img{
 @media (max-width: 369px) {
     /* PreLoder*/
     .onLoad .onLoad_body .logo{
-        width: 10rem;
-        margin-top: 35%;
+        width: 12rem;
     }
     .onLoad_body .icon i{
         font-size: 1rem !important;
