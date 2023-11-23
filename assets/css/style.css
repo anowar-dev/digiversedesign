@@ -20,6 +20,7 @@ img{
     max-width: 1920px;
     padding: 0 3rem;
     margin: 0 auto;
+    height: 100%;
 }
 /*========== Global CSS End ===========*/
 
@@ -92,6 +93,9 @@ img{
     width: 100%;
     height: 100%;
     background: linear-gradient( #78a0c1, #00002E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container .body_main{
     position: relative;
@@ -114,7 +118,7 @@ img{
 .content .slider_main{
     width: 100%;
     max-width: 50rem;
-    margin: 5rem auto;
+    margin: 4rem auto;
     position: relative;
 }
 .slider_box .slider_title{
@@ -131,10 +135,11 @@ img{
     line-height: 120%;
 }
 .body_main .btns{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20rem !important;
+    width: 100%;
+    position: fixed;
+    bottom: 35%;
+    left: 0;
+    text-align: center;
 }
 .body_main .btns a{
     text-decoration: none;
@@ -175,11 +180,11 @@ img{
 .body_main .social{
     width: fit-content;
     position: fixed;
-    right: 5rem;
+    right: 3rem;
     bottom: 1rem;
 }
 .social .social_inner a{
-    margin-right: 0.4rem;
+    margin-left: 0.4rem;
 }
 .social .social_inner a i{
     font-size: .9rem;
@@ -201,14 +206,7 @@ img{
 /*========== Start Responsive ===========*/
 
 /*------- max-width: 1400px  --------*/
-@media (max-width: 1400px) {
-    .body_main .terms{
-        margin-top: 8rem !important;
-    }
-    .body_main .social{
-        right: 3rem !important;
-    }
-}
+
 /*------- max-width: 1024px  --------*/
 @media (max-width: 1024px) {
     .social .social_inner a i{
@@ -225,9 +223,6 @@ img{
     .onLoad .onLoad_body .logo{
         width: 20rem;
     }
-    .body_main .btns{
-        margin-top: 20rem !important;
-    }
 }
 
 /*----------- max-width: 768px -------------*/
@@ -235,13 +230,6 @@ img{
     /* PreLoder */
     .onLoad .onLoad_body .logo{
         width: 18rem;
-    }
-
-    .body_main .btns{
-        margin-top: 16rem !important;
-    }
-    .content .slider_main{
-        margin: 4rem auto !important;
     }
 }
 
@@ -265,9 +253,6 @@ img{
     .body_main .social {
         right: 2rem !important;
     }
-    .social .social_inner a {
-        margin-right: 0.2rem !important;
-    }
     .body_main .terms a{
         font-size: .8rem !important;
         padding: 0 .4rem !important;
@@ -275,17 +260,11 @@ img{
     .body_main .btns a{
         font-size: 1rem !important;
     }
-    .body_main .btns{
-        margin-top: 15rem !important;
-    }
     .container{
-        padding: 0 2rem !important;
+        padding: 0 1rem !important;
     }
     .body_main .header_logo{
         width: 10rem !important;
-    }
-    .content .slider_main{
-        margin: 3rem auto !important;
     }
 }
 
@@ -322,7 +301,7 @@ img{
     .body_main .btns{
         width: 100% !important;
         text-align: center !important;
-        margin-top: 14rem !important;
+        padding: 0 1rem;
     }
     .body_main .header_logo{
         width: 8rem !important;
@@ -350,3 +329,15 @@ img{
     }
 }
 
+
+/* This is Height Controling */
+@media (max-height: 550px) {
+    .body_main .btns{
+        bottom: 30% !important;
+    }
+}
+@media (max-height: 450px) {
+    .body_main .btns{
+        bottom: 25% !important;
+    }
+}
